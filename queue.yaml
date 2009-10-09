@@ -1,0 +1,4 @@
+queue:
+- name: feedparsing 
+  rate: 10/s
+  bucket_size: 5
