@@ -72,6 +72,6 @@ DATABASE_OPTIONS = {}
 SUPERFEEDR_USERNAME = ''
 SUPERFEEDR_PASSWORD = ''
 SUPERFEEDR_HUB  = 'http://superfeedr.com/hubbub'
-SUPERFEEDR_CALLBACK = 'gae-superfeedr-shell.appspot.com/api/superfeedr/receive_feeds/'
+SUPERFEEDR_CALLBACK = 'http://gae-superfeedr-shell.appspot.com/api/superfeedr/receive_feeds/'
 
 from ragendja.settings_post import *
