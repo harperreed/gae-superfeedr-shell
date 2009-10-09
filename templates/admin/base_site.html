@@ -4,7 +4,7 @@
 {% block title %}{{ title }} | {% trans 'gae-superfeedr-shell site admin' %}{% endblock %}
 
 {% block userlinks %}
-<a href="/">Back to nepholologist</a> /
+<a href="/">Back to gae-superfeedr-shell</a> /
 {% url django-admindocs-docroot as docsroot %}{% if docsroot %}<a href="{{ docsroot }}">{% trans 'Documentation' %}</a> / {% endif %}
 <a href="{{ root_path }}password_change/">{% trans 'Change password' %}</a> /
 <a href="{% url django.contrib.auth.views.logout %}">{% trans 'Log out' %}</a>

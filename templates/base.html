@@ -7,10 +7,8 @@
     xml:lang="{% firstof LANGUAGE_CODE 'en' %}"
     lang="{% firstof LANGUAGE_CODE 'en' %}">
   <head>
-    <title>{% block title %}{% endblock %} - Harper Reed, Nepholologist</title>
+    <title>{% block title %}{% endblock %}  gae-superfeedr-shell</title>
     {% block css %}
-      <link rel="stylesheet" type="text/css"  media="screen, projection" href="/css/style.css" />
-      <link rel="stylesheet" type="text/css"  media="screen, projection" href="/js/jquery.jgrowl.css" />
     {% endblock %}
 
 
@@ -19,11 +17,10 @@
   </head>
 
   <body>
-    <img id="background-img" class="bg" src="http://c0367641.cdn.cloudfiles.rackspacecloud.com/3680331543_7653552f42_b.jpg" alt="" />
     {% block header %}
       <div id="header">
             {% block header-content %}
-            <h1>Nepholologist</h1>
+		<h1>gae-superfeedr-shell</h1>
             {% endblock %}
       </div>
     {% endblock %}
@@ -42,19 +39,10 @@
     <div id="footer">
     </div>
     {% block js %}
-    <script type="text/javascript" 
-            src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
     <script type="text/javascript">
         google.load("jquery", "1.3.2");
-     
-      google.setOnLoadCallback(function() {
-              start_updates();
-      });
     </script>
-    <script type="text/javascript" src="/js/jquery.jgrowl_compressed.js"></script>
-    <script type="text/javascript" src="/js/jquery.tools.min.js"></script>
-    <script type="text/javascript" src="/js/action.js"></script>
     {% endblock %}
-    
   </body>
 </html>
