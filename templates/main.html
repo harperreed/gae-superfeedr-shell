@@ -1,7 +1,30 @@
 {% extends 'base.html' %}
-{% block title %}Google App Engine Superfeedr Shell{% endblock %}
+{% block title %}Example{% endblock %}
 
 {% block content %}
+
+<h3>Info</h3>
+<p>This application is a shell application that will subscribe to RSS feed updates through <A href="http://superfeedr.com/">SuperFeedr.com</a>'s <a href="http://superfeedr.com/documentation#pubsubhubbub">pubsubhubbub endpoint</a>. It will then receive updates in a <i>real time</i> fashion and store the updates. It should "just run." It is powered by <a href="http://code.google.com/appengine/">Google App Engine</a> and the <a href="http://code.google.com/p/app-engine-patch/">app engine django patch</a> for App Engine. </p>
+
+<p>You can download and view the source code at this projects github page: <a href="http://github.com/harperreed/gae-superfeedr-shell">http://github.com/harperreed/gae-superfeedr-shell</a>. Let me know if you have any questions.</p>
+
+<p>This shell currently powers <a href="http://excla.im">exclaimtrack</a>, <a href="http://www.nepholologist.com/">Nepholologist</a>, <a href="http://harpersfriends.com">harper's friends</a> and a couple neat hacks that will be released soon. If you use it - email me and I will add you to the list. </p>
+
+<h3>Add a RSS feed to receive updates from:</h3>
+<p>You can add an RSS feed to the group of feeds that will be pushed to this appplication</p>
+<form id="rsssubmit">
+RSS Feed: <input type="text" value="http://github.com/feeds/harperreed/commits/gae-superfeedr-shell/master" id="rss" /> <input type="submit" value="push feed to superfeedr.com" />
+</form>
+<ul id="subbed"></ul>
+
+<h3>"Real Time" updates from <a href="http://superfeedr.com">superfeedr.com</a>.</h3>
+<p>Updates from superfeedr are displayed here</p>
+<textarea id="updates" style="width: 100%; height: 300px; background: #fafafa; border: 1px solid #666; "></textarea>
+
+<h3>About</h3>
+<p>I am <a href="http://harperreed.org">Harper Reed</a>. I blog at <a href="http://nata2.org">nata2.org</a>. You can email me at <a href="mailto:harper@nata2.org">harper@nata2.org</a>. I am <a href="http://twitter.com/harper">@harper</a> on twitter.</p>
+<p>I built this for fun.</p>
+
 {% endblock %}
 
 

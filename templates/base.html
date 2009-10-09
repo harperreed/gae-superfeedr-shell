@@ -7,8 +7,25 @@
     xml:lang="{% firstof LANGUAGE_CODE 'en' %}"
     lang="{% firstof LANGUAGE_CODE 'en' %}">
   <head>
-    <title>{% block title %}{% endblock %}  gae-superfeedr-shell</title>
+    <title>{% block title %}{% endblock %} - Google App Engine Superfeedr Shell</title>
     {% block css %}
+	<style>
+            body{
+                margin: 20px;
+                font-family:Verdana; font-size:10pt; color:#424242;
+                
+            }
+
+	    a{
+                font-family:Verdana; font-size:10pt; color:#424242;
+		}
+
+	    textarea{
+		font-size: 10px;
+
+		}
+        </style>
+
     {% endblock %}
 
 
@@ -20,7 +37,8 @@
     {% block header %}
       <div id="header">
             {% block header-content %}
-		<h1>gae-superfeedr-shell</h1>
+		<h1>Google App Engine Superfeedr Shell</h1>
+		<h2>Real time notification pushed into App Engine</h3>
             {% endblock %}
       </div>
     {% endblock %}
@@ -42,7 +60,12 @@
     <script type="text/javascript" src="http://www.google.com/jsapi"></script>
     <script type="text/javascript">
         google.load("jquery", "1.3.2");
+	google.setOnLoadCallback(function() {
+              start_updates();
+        });
+
     </script>
+    <script type="text/javascript" src="/js/action.js"></script>
     {% endblock %}
   </body>
 </html>

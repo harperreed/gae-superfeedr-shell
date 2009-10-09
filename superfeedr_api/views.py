@@ -104,3 +104,27 @@ def receive_feeds(request):
     logging.debug('Nope')
     return HttpResponse('hub.receive')
 
+
+def add_feed_subscription(request):
+    logging.info('receiving feed subscription')
+    if request.POST:
+        feed_url = request.POST.get('feed_url')
+	add_feed_superfeedr(feed_url)
+        return HttpResponse('subscribed to ' + feed_url)
+    logging.debug('subscription failed')
+    return HttpResponse('subscription failed')
+
+def view_superfeedr_updates(request):
+    logging.info('view 10 most recent updates')
+    query = SuperFeedrActivity.all()
+    query.order('-created')
+    activities_q = query.fetch(10)
+    
+    activities = []
+    for activity in activities_q:
+        activities.append(activity.update)
+
+    activities_json = simplejson.dumps(activities)
+
+    return HttpResponse(activities)
+
