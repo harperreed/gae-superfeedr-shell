@@ -18,7 +18,7 @@ This application is a shell application that will subscribe to RSS feed updates 
 
 You can download and view the source code at this projects github page: "http://github.com/harperreed/gae-superfeedr-shell":http://github.com/harperreed/gae-superfeedr-shell. Let me know if you have any questions.
 
-This shell currently powers "excla.im track":http://excla.im, Nepholologist:http://Nepholologist.com, "harper's friends":http://harpersfriends.com and a couple neat hacks that will be released soon. If you use it - email me and I will add you to the list. 
+This shell currently powers "excla.im track":http://excla.im, "Nepholologist":http://Nepholologist.com, "harper's friends":http://harpersfriends.com and a couple neat hacks that will be released soon. If you use it - email me and I will add you to the list. 
 
 h3. About
 
