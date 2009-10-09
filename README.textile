@@ -12,14 +12,16 @@ After building a couple app engine apps that used superfeedr, i noticed a partic
 
 h3. Information 
 
+You can view a live version at: "http://gae-superfeedr-shell.appspot.com/":"http://gae-superfeedr-shell.appspot.com/"
+
 This application is a shell application that will subscribe to RSS feed updates through SuperFeedr.com's pubsubhubbub endpoint. It will then receive updates in a real time fashion and store the updates. It should "just run." It is powered by Google App Engine and the app engine django patch for App Engine.
 
-You can download and view the source code at this projects github page: http://github.com/harperreed/gae-superfeedr-shell. Let me know if you have any questions.
+You can download and view the source code at this projects github page: "http://github.com/harperreed/gae-superfeedr-shell":http://github.com/harperreed/gae-superfeedr-shell. Let me know if you have any questions.
 
-This shell currently powers "http://excla.im":exclaimtrack, "http://Nepholologist.com":Nepholologist, "http://harpersfriends.com":"harper's friends" and a couple neat hacks that will be released soon. If you use it - email me and I will add you to the list. 
+This shell currently powers exclaimtrack:"http://excla.im", Nepholologist:"http://Nepholologist.com", "harper's friends":"http://harpersfriends.com" and a couple neat hacks that will be released soon. If you use it - email me and I will add you to the list. 
 
 h3. About
 
-I am "http://harperreed.org":"Harper Reed". I blog at "http://nata2.org":nata2.org. You can email me at harper@nata2.org. I am "@harper":http://twitter.com/harper on twitter.
+I am "Harper Reed":http://harpereed.org. I blog at "nata2.org":"http://nata2.org". You can email me at harper@nata2.org. I am "@harper":http://twitter.com/harper on twitter.
 
 I built this for fun.
