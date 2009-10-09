@@ -12,10 +12,14 @@ After building a couple app engine apps that used superfeedr, i noticed a partic
 
 h3. Information 
 
-h3. Plans
+This application is a shell application that will subscribe to RSS feed updates through SuperFeedr.com's pubsubhubbub endpoint. It will then receive updates in a real time fashion and store the updates. It should "just run." It is powered by Google App Engine and the app engine django patch for App Engine.
 
-v.01 - 
+You can download and view the source code at this projects github page: http://github.com/harperreed/gae-superfeedr-shell. Let me know if you have any questions.
 
-h3. Usage
+This shell currently powers exclaimtrack, Nepholologist, harper's friends and a couple neat hacks that will be released soon. If you use it - email me and I will add you to the list. 
 
+h3. About
 
+I am "http://harperreed.org":"Harper Reed". I blog at "http://nata2.org":nata2.org. You can email me at harper@nata2.org. I am "@harper":http://twitter.com/harper on twitter.
+
+I built this for fun.
