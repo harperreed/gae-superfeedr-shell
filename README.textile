@@ -22,6 +22,6 @@ This shell currently powers "excla.im track":http://excla.im, "Nepholologist":ht
 
 h3. About
 
-I am "Harper Reed":http://harpereed.org. I blog at "nata2.org":"http://nata2.org". You can email me at harper@nata2.org. I am "@harper":http://twitter.com/harper on twitter.
+I am "Harper Reed":http://harpereed.org. I blog at "nata2.org":http://nata2.org. You can email me at harper@nata2.org. I am "@harper":http://twitter.com/harper on twitter.
 
 I built this for fun.
